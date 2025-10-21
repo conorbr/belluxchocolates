@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "deploy": "npm run build && gh-pages -d dist",
     "deploy:manual": "gh-pages -d dist",
-    "deploy:cloudflare": "npm run build"
+    "deploy:cloudflare": "npm run build",
+    "build:custom-domain": "CUSTOM_DOMAIN=true npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
